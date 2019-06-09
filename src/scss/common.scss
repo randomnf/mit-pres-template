@@ -1,0 +1,134 @@
+@mixin absolute-full-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 1024px;
+    height: 768px;
+}
+
+@mixin reset-btns {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    background: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+/* styles */
+
+.full-screen {
+    @include absolute-full-screen;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+    user-select: none;
+    outline: none;
+
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+input,textarea {
+    -webkit-touch-callout: default !important;
+    -webkit-user-select: text !important;
+}
+
+.body {
+    position: relative;
+
+    width: 1024px;
+    height: 768px;
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    @include absolute-full-screen;
+}
+
+.popup {
+    position: absolute;
+    z-index: 100;
+
+    opacity: 1;
+
+    transition:
+        z-index .5s,
+        opacity .5s;
+
+    &__close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+
+        width: 40px;
+        height: 40px;
+        
+        @include reset-btns;
+    }
+}
+
+.popup-cover {
+    @include absolute-full-screen;
+    z-index: 90;
+
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.popup_hidden {
+    z-index: -1;
+
+    opacity: 0;
+}
+
+.popup-btn {
+    position: absolute;
+    
+    @include reset-btns;
+}
+
+.img {
+    display: block;
+
+    width: 100%;
+}
+
+.tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 1;
+    transition: .7s;
+    
+    &_hidden {
+        opacity: 0;
+    }
+}
+
+.tab-btn {
+    position: absolute;
+    z-index: 1;
+
+    @include reset-btns;
+}
+
+.next-slide-img {
+    position: absolute;
+    z-index: -1;
+
+    width: 1px;
+    height: 1px;
+    
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}

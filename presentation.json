@@ -1,0 +1,10 @@
+{
+    "presFullName": "PresFullName_1_2019",
+
+    "slidesPostfix": "--prod",
+    "slidesNumStart": 10,
+    "slidesNumStep": 10,
+    "slidesNumLen": 4,
+
+    "slidesCount": 5
+}

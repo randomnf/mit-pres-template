@@ -1,0 +1,29 @@
+@import "common.scss";
+
+.popup-cover {
+    background-color: rgba(#00948f, .65);
+}
+
+.popup-ref {
+    top: 62px;
+    right: 60px;
+
+    width: 309px;
+
+    overflow: hidden;
+}
+
+.popup_t_common {
+    top: 62px;
+    right: 60px;
+    bottom: 0;
+    left: 0;
+}
+
+.popup__close-btn {
+    top: 62px;
+    bottom: 0;
+
+    width: 60px;
+    height: auto;
+}

@@ -1,0 +1,15 @@
+@@include('templates/head_start.html')
+    <style></style>
+@@include(
+    'templates/head_end.html',
+    {
+        "id": false,
+        "prevent_left_swipe": false,
+        "prevent_right_swipe": false,
+        "bg_img": false
+    }
+)
+
+@@include('templates/index-list.html')
+
+@@include('templates/footer.html')

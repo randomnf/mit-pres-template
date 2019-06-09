@@ -1,0 +1,38 @@
+@@include('templates/head_start.html')
+    <style>
+        .popup-btn-###bg_img-1 {
+            bottom: 80px;
+            right: 80px;
+
+            width: 200px;
+            height: 50px;
+
+            background-color:#000;opacity:.5;
+        }
+
+        .popup-###bg_img-1 {
+            
+        }
+    </style>
+@@include(
+    'templates/head_end.html',
+    {
+        "id": "###id",
+        "prevent_left_swipe": ###prevent_left_swipe,
+        "prevent_right_swipe": ###prevent_left_swipe,
+        "bg_img": "###bg_img.png"
+    }
+)
+
+<button class="popup-btn common-popup-btn popup-btn-###bg_img-1" data-target="popup-###bg_img-1"></button>
+
+<div class="popup popup-###bg_img-1 common-popup popup_hidden">
+    <button class="popup__close-btn"></button>
+    <img class="img" src="media/images/###bg_img__popup-1.png">
+</div>
+
+@@include('templates/menu.html')
+
+@@include('templates/popup-ref.html', { "img": "###bg_img__popup-ref.png" })
+
+@@include('templates/footer.html')

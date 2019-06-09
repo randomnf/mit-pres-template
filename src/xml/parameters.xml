@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Sequence Id="@@prefix@@id" NumberOfSlides="1" Orientation="Landscape" xmlns="urn:param-schema">
+    <Links>
+        <Link SequenceId="@@prefix0005" />
+        <Link SequenceId="@@prefix0010" />
+        <Link SequenceId="@@prefix0020" />
+    </Links>
+    <Pages>
+        <Page pageid="@@prefix@@id" />
+    </Pages>
+</Sequence>

@@ -1,0 +1,22 @@
+{
+  "name": "pres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.0",
+    "gulp": "^3.9.1",
+    "gulp-file-include": "^2.0.1",
+    "gulp-images-resizer": "0.0.7",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-watch": "^5.0.1",
+    "gulp-zip": "^4.2.0",
+    "puppeteer": "^1.14.0"
+  }
+}
